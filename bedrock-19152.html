@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>创世神创造服 - 弧光游戏俱乐部</title>
+<meta name="description" content="MC 基岩版 arcclub.top 端口 19152 - 纯创造服，宏大历史建筑。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown is-active">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / <a href="bedrock.html">我的世界基岩</a> / 创世神创造服</div>
+    <h1>创世神创造服</h1>
+    <p>纯创造服 · 宏大历史建筑观赏与共建</p>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box">
+      <div class="ib-icon">⛏️</div>
+      <div>
+        <h4>服务器连接信息</h4>
+        <p>IP：<code>arcclub.top</code> · 端口：<code>19152</code> · 版本：国际基岩最新版 · 纯创造模式</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:1080px;">
+    <h2 class="section-title">玩法介绍</h2>
+    <p class="section-sub">造奇观 · 共建 · 观赏</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <h3>宏大历史建筑</h3>
+        <p>服务器内有大量已建成的宏大历史建筑，可参观学习。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏗️</div>
+        <h3>参与建造</h3>
+        <p>欢迎参与新建筑建造，一起造奇观，留下你的印记。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📸</div>
+        <h3>建筑观赏</h3>
+        <p>纯创造模式，自由参观其他玩家的建筑作品。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:1080px;">
+    <div class="qq-group">
+      <div class="qg-icon">QQ</div>
+      <div class="qg-body">
+        <div class="qg-label">弧光游戏俱乐部 · 官方群</div>
+        <div class="qg-num">1138387946</div>
+        <div class="qg-tip">涵盖所有服务器 / 分部 / 摄影间 / 技术部 · 俱乐部唯一官方群</div>
+      </div>
+      <a class="qg-action" href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">一键加群 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:920px;">
+    <div class="info-box">
+      <div class="ib-icon">📲</div>
+      <div>
+        <h4>加入方式</h4>
+        <p>基岩版游戏中 → 好友 → 添加服务器 → IP 填 <code>arcclub.top</code>，端口填 <code>19152</code> 即可加入。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

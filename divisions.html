@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>俱乐部分部 - 弧光游戏俱乐部</title>
+<meta name="description" content="ARC 弧光游戏俱乐部全部游戏分部 - WoTB 亚服 / 国服、皇室战争、APEX、荒野乱斗、CODM、守望先锋、Valorant、GTA V、无人深空。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / 俱乐部分部</div>
+    <h1>俱乐部分部</h1>
+    <p>ARC 各游戏分部一览 · WoTB / 皇室战争 / APEX / 荒野乱斗 / CODM / 守望先锋 / Valorant / GTA V / 无人深空</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">所有分部</h2>
+    <p class="section-sub">9 个分部 · WoTB 内部再分亚服 / 国服</p>
+
+    <div class="grid grid-4">
+
+      <div class="card-banner-wrap">
+        <div class="card-banner">
+          <img src="assets/img/games/wotb_banner.jpg" alt="WoTB 分部" />
+          <span class="banner-en">WORLD OF TANKS BLITZ</span>
+          <span class="banner-sub">EST. 2015</span>
+          <span class="banner-title">WoTB 分部</span>
+        </div>
+        <div class="card-body">
+          <h3>WoTB 分部</h3>
+          <p>ARC 起家分部。下辖 -GW- 精英分团，人均胜率 60%+。分亚服 / 国服两条线。</p>
+          <div class="server-tags">
+            <span class="tag">核心分部</span><span class="tag">EST. 2015</span>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:auto; padding-top:10px;">
+            <a class="btn btn-primary" href="wotb.html" style="padding:7px 14px; font-size:12px;">总览</a>
+            <a class="btn btn-ghost" href="wotb-asia.html" style="padding:7px 14px; font-size:12px;">亚服 -ARC-Asia-</a>
+            <a class="btn btn-ghost" href="wotb-cn.html" style="padding:7px 14px; font-size:12px;">国服 -ARC-CN-</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="card-banner-wrap" href="clash_royale.html">
+        <div class="card-banner">
+          <img src="assets/img/games/clash_royale_banner.jpg" alt="皇室战争" />
+          <span class="banner-en">CLASH ROYALE</span>
+          <span class="banner-sub">SUPERCELL</span>
+          <span class="banner-title">皇室战争</span>
+        </div>
+        <div class="card-body">
+          <h3>皇室战争分部</h3>
+          <p>策略卡牌手游。天梯冲杯、2v2 友谊赛、卡组研究。</p>
+          <div class="server-tags">
+            <span class="tag">策略</span><span class="tag">卡牌</span><span class="tag">天梯</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="apex.html">
+        <div class="card-banner">
+          <img src="assets/img/games/apex_legends_banner.jpg" alt="APEX 英雄" />
+          <span class="banner-en">APEX LEGENDS</span>
+          <span class="banner-sub">BATTLE ROYALE</span>
+          <span class="banner-title">APEX 英雄</span>
+        </div>
+        <div class="card-body">
+          <h3>APEX 英雄分部</h3>
+          <p>大逃杀 FPS。组队上分、排位冲分、整活娱乐。</p>
+          <div class="server-tags">
+            <span class="tag">FPS</span><span class="tag">大逃杀</span><span class="tag">组队</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="brawl_stars.html">
+        <div class="card-banner">
+          <img src="assets/img/games/brawl_stars_banner.jpg" alt="荒野乱斗" />
+          <span class="banner-en">BRAWL STARS</span>
+          <span class="banner-sub">SUPERCELL</span>
+          <span class="banner-title">荒野乱斗</span>
+        </div>
+        <div class="card-body">
+          <h3>荒野乱斗分部</h3>
+          <p>3v3 休闲竞技。战队赛、英雄搭配研究。</p>
+          <div class="server-tags">
+            <span class="tag">休闲</span><span class="tag">3v3</span><span class="tag">竞技</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="codm.html">
+        <div class="card-banner">
+          <img src="assets/img/games/codm_banner.jpg" alt="使命召唤手游" />
+          <span class="banner-en">CALL OF DUTY: MOBILE</span>
+          <span class="banner-sub">FPS</span>
+          <span class="banner-title">使命召唤手游</span>
+        </div>
+        <div class="card-body">
+          <h3>使命召唤手游分部</h3>
+          <p>FPS / 战术竞技 / 排位冲分。</p>
+          <div class="server-tags">
+            <span class="tag">FPS</span><span class="tag">手游</span><span class="tag">战术竞技</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="overwatch.html">
+        <div class="card-banner">
+          <img src="assets/img/games/overwatch.jpg" alt="Overwatch" />
+          <span class="banner-en">OVERWATCH</span>
+          <span class="banner-sub">6V6 HERO SHOOTER</span>
+          <span class="banner-title">守望先锋</span>
+        </div>
+        <div class="card-body">
+          <h3>守望先锋分部</h3>
+          <p>6v6 英雄射击。各类英雄池、排位冲分、赛事观摩。</p>
+          <div class="server-tags">
+            <span class="tag">FPS</span><span class="tag">6v6</span><span class="tag">英雄</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="valorant.html">
+        <div class="card-banner">
+          <img src="assets/img/games/valorant_banner.jpg" alt="Valorant" />
+          <span class="banner-en">VALORANT</span>
+          <span class="banner-sub">RIOT GAMES</span>
+          <span class="banner-title">Valorant</span>
+        </div>
+        <div class="card-body">
+          <h3>Valorant 分部</h3>
+          <p>5v5 战术射击，特工技能 + 枪法竞技。固定 5 人队 / 排位 / 休闲整活。</p>
+          <div class="server-tags">
+            <span class="tag">FPS</span><span class="tag">5v5</span><span class="tag">战术</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="gta5.html">
+        <div class="card-banner">
+          <img src="assets/img/games/gta5_banner.jpg" alt="GTA V" />
+          <span class="banner-en">GRAND THEFT AUTO V</span>
+          <span class="banner-sub">ROCKSTAR GAMES</span>
+          <span class="banner-title">GTA V</span>
+        </div>
+        <div class="card-body">
+          <h3>GTA V 分部</h3>
+          <p>洛圣都开放世界。任务 / 竞速 / 帮派对抗 / 整活，含 Rockstar Social Club 官方 Crew。</p>
+          <div class="server-tags">
+            <span class="tag">开放世界</span><span class="tag">任务</span><span class="tag">竞速</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="nms.html">
+        <div class="card-banner">
+          <img src="assets/img/games/nms_banner.jpg" alt="无人深空" />
+          <span class="banner-en">NO MAN'S SKY</span>
+          <span class="banner-sub">HELLO GAMES</span>
+          <span class="banner-title">无人深空</span>
+        </div>
+        <div class="card-body">
+          <h3>无人深空分部</h3>
+          <p>No Man's Sky 太空探索。跨星系远征、基地建造、多人生存，自由组队。</p>
+          <div class="server-tags">
+            <span class="tag">太空</span><span class="tag">探索</span><span class="tag">生存</span>
+          </div>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

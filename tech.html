@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>弧光技术部 · 弧光游戏俱乐部</title>
+<meta name="description" content="ARC 弧光技术部 · 两个板块：我的世界基岩生态开发（EndStone / AstrBot / Bedrock Addon）+ WoTB 社区开发（ARC App / 战绩查询 / QQ 战绩查询插件）。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / 弧光技术部</div>
+    <h1>弧光技术部</h1>
+    <p>两个板块 · 我的世界基岩生态开发（现役）+ WoTB 社区开发（历史）· 开源 / 闭源项目均沉淀于俱乐部十年历程</p>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+      <span class="ib-icon" style="flex-shrink:0;">⚙️</span>
+      <div style="flex:1; min-width:200px;">
+        <h4 style="margin-bottom:6px;">快速跳转</h4>
+        <p style="margin:0;">
+          <a href="#minecraft" style="color:var(--brand-2); font-weight:600; margin-right:18px;">板块一 · 我的世界基岩生态开发</a>
+          <a href="#wotb" style="color:var(--brand-2); font-weight:600;">板块二 · WoTB 社区开发（历史）</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 板块一 · 我的世界基岩生态开发 ========== -->
+<section class="section" id="minecraft">
+  <div class="container">
+    <h2 class="section-title">板块一 · 我的世界基岩生态开发</h2>
+    <p class="section-sub">现役 · 面向 EndStone 基岩服 / AstrBot / Bedrock Addon · 开源在 <a href="https://github.com/ARC-Minecraft" target="_blank" rel="noopener" style="color:var(--brand-2); font-weight:600;">github.com/ARC-Minecraft</a></p>
+
+    <div class="info-box" style="margin-bottom:32px;">
+      <div class="ib-icon">🧩</div>
+      <div>
+        <h4>本组织 ARC-Minecraft / 弧光技术部（基岩生态）</h4>
+        <p>本组织 <a href="https://github.com/ARC-Minecraft" target="_blank" rel="noopener" style="color:var(--brand-2); font-weight:600;">github.com/ARC-Minecraft</a> 是弧光技术部负责<strong>基岩生态</strong>的小组，专注 <strong>EndStone 基岩服</strong>（Python 插件生态）与 <strong>Bedrock Addon</strong> 内容工具（自动汉化器、世界区块重置等）。<br />技术部同时维护 <a href="bedrock.html">我的世界基岩服务器</a> 5 端口运行所依赖的整套核心（银行、监狱、商店、成就、PvP、AI Agent、QQ 群服互通等）。所有插件在弧光服务器 <code style="font-family:'SF Mono',Consolas,monospace;background:var(--bg-soft);padding:2px 8px;border-radius:4px;color:var(--brand-2);">arcclub.top</code> 上实战验证后再开源发布。</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; font-size:22px; margin-bottom:20px; color:var(--text-0);">技术栈与能力</h3>
+    <div class="grid grid-3" style="margin-bottom:48px;">
+      <div class="card">
+        <div class="card-icon">🐍</div>
+        <h3>Python 全栈</h3>
+        <p>所有 EndStone 插件均使用 Python 开发，配合 asyncio 提供高并发能力；AstrBot 消息中枢、Addon 工具、运维脚本同语言体系。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔌</div>
+        <h3>EndStone 插件生态</h3>
+        <p>基于 <a href="https://github.com/EndstoneMC/Endstone" target="_blank" rel="noopener" style="color:var(--brand-2);">EndStone</a>（Bedrock 服务端 C++/Python 核心），自研经济、PvP、AI、跨服、AstrBot 互通等 19+ 插件。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Agent / 工具调用</h3>
+        <p>基于 OpenAI 的可操作本服 AI 助手（ARC-AI-Helper / ARC-AI-Builder），触发词对话、工具调用、银行业务 / 监狱 / 领地 / 天眼 / 自动建造。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛰️</div>
+        <h3>AstrBot 消息中枢</h3>
+        <p>AstrBot 群服互通 WebSocket Hub，跨服、跨设备、QQ ↔ Minecraft 双向消息；与 QQ-Sync-Plugin 配套使用。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🗺️</div>
+        <h3>Bedrock Addon 工具链</h3>
+        <p>Addon 自动汉化器（ARC-MCBE-Addon-Auto-Localizer）、Amulet 世界区块重置工具，专注 MCBE 内容本地化与运维。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>MIT / AGPL 开源</h3>
+        <p>绝大多数插件采用 MIT 协议，鼓励二次开发；Amulet 区块重置工具基于 AGPL-3.0，符合社区约定。</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; font-size:22px; margin-bottom:8px; color:var(--text-0);">开源仓库（GitHub · 共 19 个）</h3>
+    <p style="text-align:center; color:var(--text-2); margin-bottom:32px;">按 ⭐ Star 数排序 · 主体基于 EndStone 插件 + Python（另含 Bedrock Addon 工具链与 Amulet 桌面工具）</p>
+
+    <div class="grid grid-2">
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Core-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit; border:2px solid var(--brand-2);">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">💎</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Core-Plugin <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 8 · 最高星</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2025-08 起 · 8 月 31 日更新 · 2 forks</p>
+            <p style="font-size:14px;"><strong>弧光核心插件</strong>：EndStone 基岩服核心功能模块，为 ARC 生态提供统一基础能力与接口（银行 / 领地 / 经济基础 / 数据 API 等），所有上层插件（商店、监狱、成就、PvP、AI）都依赖它。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Button-Shop-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🛒</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Button-Shop-Plugin <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 4</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2025-09 起 · 8 月 31 日更新</p>
+            <p style="font-size:14px;">弧光按钮商店：基于 EndStone 的玩家按钮商店与官方无限商店 / 动态定价系统。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Ups-And-Downs" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">📈</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Ups-And-Downs <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 3</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2025-10 起 · 8 月 30 日更新</p>
+            <p style="font-size:14px;">MC 股票交易插件：基于 EndStone 的美股行情模拟交易与股票教学系统（弧光基岩主服 19132 端口"股票"玩法即此插件）。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/ARC-MCBE-Addon-Auto-Localizer" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🌐</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">ARC-MCBE-Addon-Auto-Localizer <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 3</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 9 月 5 日更新</p>
+            <p style="font-size:14px;">弧光我的世界基岩 Addon 自动汉化器（v1.0.3）— MCBE 模组汉化、批量处理、字段规范化一条龙。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndStone-ARC-Shooter-Game" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🔫</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndStone-ARC-Shooter-Game <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 2</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 9 月 5 日更新</p>
+            <p style="font-size:14px;">弧光射击游戏：EndStone 基岩服可配置射击地图插件，目前实装团队死斗（TDM），含大厅、商店与武器配置。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-AI-Builder" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🏗️</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-AI-Builder <span style="display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--brand-2); color:#fff; margin-left:6px; vertical-align:middle;">⭐ 2</span></h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2025-09 起 · 8 月 20 日更新</p>
+            <p style="font-size:14px;">AI 建筑师插件：基于 OpenAI 在 EndStone 服务器中按需求自动建造。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Market-Economy-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">💰</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Market-Economy-Plugin</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 28 日更新</p>
+            <p style="font-size:14px;">弧光市场经济：全服官方价目与动态定价，每日波动与需求驱动调价，供木牌 / 按钮商店复用。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Inventory-Manager" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🎒</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Inventory-Manager</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 31 日更新</p>
+            <p style="font-size:14px;">弧光背包管理器：统一背包读取 / 匹配 / 扣除 / 发放 API（含附魔、Lore、NBT），供商店与成就等插件复用。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Prison-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🔒</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Prison-Plugin</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · EndStone 基岩服</p>
+            <p style="font-size:14px;">弧光监狱插件：玩家违规自动关押、刑期、服刑任务与减刑系统，配合 AI-Helper 实现神灵巡查。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Sign-Shop-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🪧</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Sign-Shop-Plugin</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · EndStone 基岩服</p>
+            <p style="font-size:14px;">弧光木牌商店：右键木牌开店 / 交易，官方店默认出售+回收二合一，对接市场经济自动定价。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Realistic-Survival" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🥤</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Realistic-Survival</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-02 起 · 8 月 30 日更新</p>
+            <p style="font-size:14px;">真实生存插件：为 EndStone 服务器添加口渴值与物品效果等生存机制。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-QQ-Sync-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">💬</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-QQ-Sync-Plugin</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 30 日更新</p>
+            <p style="font-size:14px;">弧光专用跨服、跨设备群服互通插件（EndStone 端，配合 AstrBot 消息中枢）。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-AI-Helper" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🧠</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-AI-Helper</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 30 日更新</p>
+            <p style="font-size:14px;">弧光 Agent：EndStone 可操作本服的 AI 助手，触发词对话、工具调用（银行 / 领地 / 天眼 / 监狱等）与可选神灵模式。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-PvP-KD-Ranking" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">⚔️</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-PvP-KD-Ranking</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 28 日更新</p>
+            <p style="font-size:14px;">弧光 PvP KD 排行榜：记录击杀 / 死亡、KD 自动切换 PvP 头衔，全服广播前 10 名，/kd 查询。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-ARC-Achievement" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🏆</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-ARC-Achievement</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 27 日更新</p>
+            <p style="font-size:14px;">弧光成就插件：可配置击杀类成就、进度面板与 OP 管理，头衔奖励对接弧光核心。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/Amulet-Minecraft-Bedrock-World-Chunk-Resetter" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🗺️</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">Amulet-Minecraft-Bedrock-World-Chunk-Resetter</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · AGPL-3.0 · 2025-08 起 · 8 月 24 日更新</p>
+            <p style="font-size:14px;">基于 Amulet 的 MCBE 世界区块重置工具：保留 ARC Core 领地覆盖区块，重置其余区域使其重新生成。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/AstrBot-ARC-EndStoneMC-Hub" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🛰️</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">AstrBot-ARC-EndStoneMC-Hub</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2026-08 起 · 8 月 21 日更新</p>
+            <p style="font-size:14px;">AstrBot 弧光 EndStone 消息中枢：QQ ↔ Minecraft 跨服互通 WebSocket Hub，跨设备同步消息。</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/ARC-Minecraft/EndstoneMC-Dont-Tap-The-White-Tile-Plugin" target="_blank" rel="noopener" style="display:block; color:inherit;">
+        <div style="display:flex; align-items:start; gap:14px;">
+          <div style="font-size:32px; line-height:1;">🎹</div>
+          <div style="flex:1;">
+            <h3 style="font-size:17px;">EndstoneMC-Dont-Tap-The-White-Tile-Plugin</h3>
+            <p style="font-size:13px; color:var(--text-3); margin-bottom:8px;">Python · MIT · 2025-02 起 · 9 月 6 日更新</p>
+            <p style="font-size:14px;">别踩白块小游戏插件：EndStone 基岩服竞速挑战，支持多语言与排行竞争。</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== 板块二 · WoTB 社区开发（历史） ========== -->
+<section class="section" id="wotb" style="background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02), transparent);">
+  <div class="container">
+    <h2 class="section-title">板块二 · WoTB 社区开发（历史）</h2>
+    <p class="section-sub">2015–2018 · 弧光起源项目 · 战绩查询 / 车辆名人堂 / QQ 战绩查询插件 · 多数已停止维护，源码与设计沉淀在技术部</p>
+
+    <div class="info-box" style="margin-bottom:32px; border-left:4px solid var(--brand-2);">
+      <div class="ib-icon">📜</div>
+      <div>
+        <h4>弧光起家的那几年</h4>
+        <p>弧光游戏俱乐部最早（2015）就是 WoTB（坦克世界闪电战）的 -SDT- 军团，更名 -ARC- 后，<strong>技术部的前身是 WoTB 社区开发组</strong>，从战绩查询、车辆名人堂伤害记录，到 QQ 战绩查询插件 / ARC App 移动端，<strong>为 WoTB 社区做了一整代工具链</strong>。2018 转向基岩服后大部分老项目停止维护，但代码与产品思路沉淀下来，构成今天基岩生态的雏形。</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; font-size:22px; margin-bottom:20px; color:var(--text-0);">历史项目</h3>
+    <div class="grid grid-3" style="margin-bottom:48px;">
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>ARC App（移动端）</h3>
+        <p><strong>状态：已停止维护</strong><br />弧光初代移动端 App，主打<strong>战绩查询</strong>与<strong>车辆名人堂伤害记录</strong>，是当时 WoTB 中文圈少数能离线查玩家 / 车辆 / 战绩的第三方 App。iOS / Android 双端，长期霸榜中文区 WoTB 工具类目。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏆</div>
+        <h3>车辆名人堂</h3>
+        <p><strong>状态：数据归档保留</strong><br />收录全车辆最大伤害 / 平均伤害 / 通杀次数 / 装甲穿透率等数据，按版本、按车辆排行。数据被无数 WoTB 中文玩家引用，停止更新后作为历史档案保留。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔌</div>
+        <h3>QQ 战绩查询插件（v1.0.0）</h3>
+        <p><strong>状态：已停止维护</strong><br />基于 CoolQ / 早期机器人框架的 QQ bot 插件，在 QQ 群内直接查询玩家战绩。1.0.0 版本后受机器人平台打击影响停更，下面是当时的演示视频。</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center; font-size:22px; margin-bottom:8px; color:var(--text-0);">演示视频 · QQ 战绩查询插件 1.0.0</h3>
+    <p style="text-align:center; color:var(--text-2); margin-bottom:32px;">BV1G54y1D7nJ · 点击封面加载播放器</p>
+
+    <div class="video-grid" style="max-width:720px; margin:0 auto;">
+      <article class="video-card-embed">
+        <div class="video-cover" data-src="//player.bilibili.com/player.html?bvid=BV1G54y1D7nJ&autoplay=1&danmaku=0&high_quality=1">
+          <img src="https://i2.hdslb.com/bfs/archive/10be84327090140ad792a224ead9fe44981a2735.jpg" alt="封面" referrerpolicy="no-referrer" loading="lazy" />
+          <div class="cover-play">
+            <div class="play-circle">▶</div>
+            <div class="play-tip">点击播放</div>
+          </div>
+          <span class="cover-duration">01:49</span>
+        </div>
+        <div class="video-meta">
+          <h4>[WoTB]在QQ里也能秀战绩</h4>
+          <div class="video-stats">
+            <span class="stat"><span class="stat-ic">👤</span> DEVILENMO</span>
+            <span class="stat"><span class="stat-ic">▶</span> 1273</span>
+            <span class="stat"><span class="stat-ic">👍</span> 101</span>
+            <span class="stat"><span class="stat-ic">💬</span> 23</span>
+          </div>
+          <p class="video-desc">WoTB 战绩查询插件 1.0.0 版本开发完啦！近期机器人遭到了打击，大部分机器人都已经无法使用，因此抓紧最后的机会体验本插件吧！</p>
+          <div class="video-foot">
+            <span class="vid-tag">BV1G54y1D7nJ</span>
+            <a class="open-bili" href="https://www.bilibili.com/video/BV1G54y1D7nJ/" target="_blank" rel="noopener">在 B 站打开 →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box">
+      <div class="ib-icon">🤝</div>
+      <div>
+        <h4>加入技术部 / 提交 PR</h4>
+        <p>欢迎提交 PR、Issue，或加入 <a href="bedrock.html">弧光基岩服务器</a> 实战体验插件。基岩生态所有仓库在 GitHub 上开源，遵循各自的 License（MIT / AGPL-3.0）。WoTB 历史项目如需重制 / 接手，欢迎联系核心成员。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // 点击封面懒加载 B 站 iframe 播放器
+  document.querySelectorAll('.video-cover').forEach(function (cover) {
+    cover.addEventListener('click', function () {
+      var src = cover.getAttribute('data-src');
+      if (!src) return;
+      cover.innerHTML = '<iframe src="' + src + '" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; fullscreen"></iframe>';
+      cover.classList.add('is-playing');
+    });
+  });
+</script>
+
+</body>
+</html>

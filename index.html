@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>弧光游戏俱乐部 ARC Game Club</title>
+<meta name="description" content="ARC 弧光游戏俱乐部 - 成立于 2015 年，从 WoTB 军团 -SDT- 起步，旗下有 -GW- 精英分团。自建基岩、森林、饥荒、幻兽帕鲁等多游戏服务器。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<!-- ========== 导航 ========== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">EST. 2015 · 持续运营至今</div>
+        <h1>弧光游戏俱乐部<br/><span class="grad">ARC</span></h1>
+        <p class="lead">
+          从一个 WoTB 军团起步，到横跨多款主流游戏的玩家社区。<br/>
+          我们组建过 -GW- 精英分团，开过基岩、森林、饥荒、幻兽帕鲁等多款自建服务器。<br/>
+          这里是玩家的家。
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="bedrock.html" class="btn btn-primary">加入服务器 →</a>
+          <a href="#about" class="btn btn-ghost">了解历史</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="num">10+</div>
+            <div class="lbl">YEARS 运营</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="num">6+</div>
+            <div class="lbl">GAMES 涉及</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="num">7+</div>
+            <div class="lbl">SERVERS 自建</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="icon-bg"></div>
+        <img class="icon" src="assets/img/icon.png" alt="ARC Logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 简介 ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">关于 ARC</h2>
+    <p class="section-sub">从 2015 到今天，弧光从未停止</p>
+    <div style="max-width:880px; margin:0 auto; font-size:16px; color:var(--text-1); line-height:1.9;">
+      <p style="margin-bottom:20px;">
+        弧光游戏俱乐部成立自 2015 年，最初只是 WoTB（坦克世界闪电战）这款游戏的一个军团。
+        最早的名字叫 <strong style="color:var(--brand-1);">-SDT-</strong>，后改名 <strong style="color:var(--brand-1);">-ARC-</strong>，
+        下辖 <strong style="color:var(--brand-1);">-GW- 精英分团</strong>，人均胜率 60%+。
+      </p>
+      <p style="margin-bottom:20px;">
+        后于 2018 年开设我的世界基岩服务器，之后进一步在其他游戏中开设分部：
+        皇室战争分部、APEX 分部、荒野乱斗分部、CODM 分部、守望先锋分部等主流游戏多有涉及。
+      </p>
+      <p>
+        自建游戏服务器规模也逐渐扩大，森林、饥荒、幻兽帕鲁、风启之旅、泰拉瑞亚、风屿奇航、冰封之焰等游戏服务器。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 历程时间线 ========== -->
+<section class="section" id="history" style="background: linear-gradient(180deg, transparent, rgba(255,255,255,0.015), transparent);">
+  <div class="container">
+    <h2 class="section-title">发展历程</h2>
+    <p class="section-sub">十年弧光，一路走来</p>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-year">2015</span>
+        <h3>ARC 起点 -SDT-</h3>
+        <p>弧光游戏俱乐部在 WoTB（坦克世界闪电战）成立，最初名为 -SDT- 军团。</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2016</span>
+        <h3>更名为 -ARC-，组建 -GW- 精英分团</h3>
+        <p>军团正式更名为 -ARC-，下辖 -GW- 精英分团，主打高胜率玩家，人均胜率 60%+。</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2018</span>
+        <h3>开设 MC 基岩服务器</h3>
+        <p>进军我的世界基岩版，自建 arcclub.top 服务器，开始多游戏运营。</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">2019+</span>
+        <h3>扩展游戏分部</h3>
+        <p>陆续在皇室战争、APEX、荒野乱斗、CODM、守望先锋等主流游戏中开设分部。</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-year">至今</span>
+        <h3>自建游戏服务器版图持续扩张</h3>
+        <p>已运营森林、饥荒、幻兽帕鲁、风启之旅、泰拉瑞亚、风屿奇航、冰封之焰等多款自建游戏服务器。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 服务器 ========== -->
+<section class="section" id="servers">
+  <div class="container">
+    <h2 class="section-title">自建游戏服务器</h2>
+    <p class="section-sub">当前 3 款开启 · 5 款暂时关闭（页面保留）</p>
+    <div class="grid grid-4">
+
+      <a class="card-banner-wrap" href="bedrock.html">
+        <div class="card-banner">
+          <img src="assets/img/games/minecraft_banner.jpg" alt="我的世界基岩" />
+          <span class="banner-en">MINECRAFT BEDROCK</span>
+          <span class="banner-sub">MOJANG</span>
+          <span class="banner-title">我的世界基岩</span>
+        </div>
+        <div class="card-body">
+          <p>arcclub.top · 5 端口 · 冒险/创造/枪战/丧尸/自由生存</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:#22c55e;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 6px rgba(34,197,94,0.5);"></span>开服中
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="palworld.html">
+        <div class="card-banner">
+          <img src="assets/img/games/palworld_banner.jpg" alt="幻兽帕鲁" />
+          <span class="banner-en">PALWORLD</span>
+          <span class="banner-sub">POCKETPAIR</span>
+          <span class="banner-title">幻兽帕鲁</span>
+        </div>
+        <div class="card-body">
+          <p>捕捉 · 建造 · 战斗 · 联机</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:#22c55e;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 6px rgba(34,197,94,0.5);"></span>开服中
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="terraria.html">
+        <div class="card-banner">
+          <img src="assets/img/games/terraria_banner.jpg" alt="泰拉瑞亚" />
+          <span class="banner-en">TERRARIA</span>
+          <span class="banner-sub">RE-LOGIC</span>
+          <span class="banner-title">泰拉瑞亚</span>
+        </div>
+        <div class="card-body">
+          <p>2D 沙盒 · Boss 战 · 长期开放</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:#22c55e;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;box-shadow:0 0 6px rgba(34,197,94,0.5);"></span>开服中
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="dont_starve.html" style="opacity:0.7;">
+        <div class="card-banner">
+          <img src="assets/img/games/dst_banner.jpg" alt="饥荒" />
+          <span class="banner-en">DON'T STARVE TOGETHER</span>
+          <span class="banner-sub">KLEI</span>
+          <span class="banner-title">饥荒</span>
+        </div>
+        <div class="card-body">
+          <p>DST 联机生存</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:var(--text-3);">
+            <span style="width:8px;height:8px;border-radius:50%;background:#d4d4dc;display:inline-block;"></span>暂时关闭
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="forest.html" style="opacity:0.7;">
+        <div class="card-banner">
+          <img src="assets/img/games/forest_banner.jpg" alt="森林" />
+          <span class="banner-en">THE FOREST</span>
+          <span class="banner-sub">ENDNIGHT</span>
+          <span class="banner-title">森林</span>
+        </div>
+        <div class="card-body">
+          <p>沙盒生存恐怖</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:var(--text-3);">
+            <span style="width:8px;height:8px;border-radius:50%;background:#d4d4dc;display:inline-block;"></span>暂时关闭
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="wind_quest.html" style="opacity:0.7;">
+        <div class="card-banner">
+          <img src="assets/img/games/wind_quest_banner.jpg" alt="风启之旅" />
+          <span class="banner-en">WINDROSE · 风启之旅</span>
+          <span class="banner-sub">WINDROSE CREW</span>
+          <span class="banner-title">风启之旅</span>
+        </div>
+        <div class="card-body">
+          <p>国产合作动作冒险</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:var(--text-3);">
+            <span style="width:8px;height:8px;border-radius:50%;background:#d4d4dc;display:inline-block;"></span>暂时关闭
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="wind_island.html" style="opacity:0.7;">
+        <div class="card-banner">
+          <img src="assets/img/games/wind_island_banner.jpg" alt="风屿奇航" />
+          <span class="banner-en">WIND ISLAND</span>
+          <span class="banner-sub">ENJOY STUDIO</span>
+          <span class="banner-title">风屿奇航</span>
+        </div>
+        <div class="card-body">
+          <p>国产海岛生存</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:var(--text-3);">
+            <span style="width:8px;height:8px;border-radius:50%;background:#d4d4dc;display:inline-block;"></span>暂时关闭
+          </div>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="icefire.html" style="opacity:0.7;">
+        <div class="card-banner">
+          <img src="assets/img/games/frozenflame_banner.jpg" alt="冰封之焰" />
+          <span class="banner-en">FROZEN FLAME</span>
+          <span class="banner-sub">DREAMSIDE</span>
+          <span class="banner-title">冰封之焰</span>
+        </div>
+        <div class="card-body">
+          <p>ARC 自建服务器</p>
+          <div style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; color:var(--text-3);">
+            <span style="width:8px;height:8px;border-radius:50%;background:#d4d4dc;display:inline-block;"></span>暂时关闭
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== 俱乐部分部 ========== -->
+<section class="section" id="divisions" style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title">俱乐部分部</h2>
+    <p class="section-sub">WoTB 分部含亚服 / 国服双线</p>
+    <div class="grid grid-4">
+
+      <a class="card-banner-wrap" href="wotb.html">
+        <div class="card-banner">
+          <img src="assets/img/games/wotb_banner.jpg" alt="WoTB 分部" />
+          <span class="banner-en">WORLD OF TANKS BLITZ</span>
+          <span class="banner-sub">WARGAMING</span>
+          <span class="banner-title">WoTB 分部</span>
+        </div>
+        <div class="card-body">
+          <p>ARC 起家分部 · -GW- 精英分团（胜率 60%+） · 内含亚服 -ARC-Asia- / 国服 -ARC-CN-</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="clash_royale.html">
+        <div class="card-banner">
+          <img src="assets/img/games/clash_royale_banner.jpg" alt="皇室战争" />
+          <span class="banner-en">CLASH ROYALE</span>
+          <span class="banner-sub">SUPERCELL</span>
+          <span class="banner-title">皇室战争</span>
+        </div>
+        <div class="card-body">
+          <p>天梯冲杯 · 2v2 友谊赛 · 卡组研究</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="apex.html">
+        <div class="card-banner">
+          <img src="assets/img/games/apex_legends_banner.jpg" alt="APEX 英雄" />
+          <span class="banner-en">APEX LEGENDS</span>
+          <span class="banner-sub">RESPAWN</span>
+          <span class="banner-title">APEX 英雄</span>
+        </div>
+        <div class="card-body">
+          <p>组队上分 · 排位冲分 · 整活娱乐</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="brawl_stars.html">
+        <div class="card-banner">
+          <img src="assets/img/games/brawl_stars_banner.jpg" alt="荒野乱斗" />
+          <span class="banner-en">BRAWL STARS</span>
+          <span class="banner-sub">SUPERCELL</span>
+          <span class="banner-title">荒野乱斗</span>
+        </div>
+        <div class="card-body">
+          <p>3v3 战队赛 · 英雄搭配</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="codm.html">
+        <div class="card-banner">
+          <img src="assets/img/games/codm_banner.jpg" alt="使命召唤手游" />
+          <span class="banner-en">CALL OF DUTY: MOBILE</span>
+          <span class="banner-sub">ACTIVISION</span>
+          <span class="banner-title">使命召唤手游</span>
+        </div>
+        <div class="card-body">
+          <p>多人模式 · 战术竞技 · 排位</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="overwatch.html">
+        <div class="card-banner">
+          <img src="assets/img/games/overwatch.jpg" alt="Overwatch" />
+          <span class="banner-en">OVERWATCH</span>
+          <span class="banner-sub">BLIZZARD</span>
+          <span class="banner-title">守望先锋</span>
+        </div>
+        <div class="card-body">
+          <p>6v6 英雄射击 · 排位 · 赛事观摩</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="valorant.html">
+        <div class="card-banner">
+          <img src="assets/img/games/valorant_banner.jpg" alt="Valorant" />
+          <span class="banner-en">VALORANT</span>
+          <span class="banner-sub">RIOT GAMES</span>
+          <span class="banner-title">Valorant</span>
+        </div>
+        <div class="card-body">
+          <p>5v5 战术射击 · 特工技能 · 排位冲分</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="gta5.html">
+        <div class="card-banner">
+          <img src="assets/img/games/gta5_banner.jpg" alt="GTA V" />
+          <span class="banner-en">GRAND THEFT AUTO V</span>
+          <span class="banner-sub">ROCKSTAR GAMES</span>
+          <span class="banner-title">GTA V</span>
+        </div>
+        <div class="card-body">
+          <p>洛圣都开放世界 · 任务 / 竞速 / 帮派对抗 · Social Club Crew</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+      <a class="card-banner-wrap" href="nms.html">
+        <div class="card-banner">
+          <img src="assets/img/games/nms_banner.jpg" alt="无人深空" />
+          <span class="banner-en">NO MAN'S SKY</span>
+          <span class="banner-sub">HELLO GAMES</span>
+          <span class="banner-title">无人深空</span>
+        </div>
+        <div class="card-body">
+          <p>太空探索 · 跨星系远征 · 基地建造 · 多人生存</p>
+          <span class="more">进入分部 →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== 弧光摄影间入口 ========== -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <a class="card-banner-wrap" href="studio.html" style="flex-direction:row; max-width:1080px; margin:0 auto;">
+      <div class="card-banner banner-grad-windi" style="flex:0 0 240px; aspect-ratio:auto; min-height:160px;">
+        <div class="deco"></div>
+        <span class="banner-en">ARC STUDIO</span>
+        <span class="banner-title" style="bottom:auto; top:50%; transform:translateY(-50%); left:18px; right:18px; font-size:26px;">🎬 弧光摄影间</span>
+      </div>
+      <div class="card-body" style="flex:1; padding:28px 32px;">
+        <h3>弧光摄影间</h3>
+        <p>弧光游戏俱乐部在 Frank 导演的指导下，基于各种游戏拍摄战争微电影。4 部作品已发布 B 站，点击封面即可观看。</p>
+        <span class="more">观看作品 →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ========== 页脚 ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

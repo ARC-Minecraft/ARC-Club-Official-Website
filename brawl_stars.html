@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>荒野乱斗分部 - 弧光游戏俱乐部</title>
+<meta name="description" content="ARC 荒野乱斗分部 - Supercell 休闲竞技手游。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / <a href="#">俱乐部分部</a> / 荒野乱斗</div>
+    <h1>荒野乱斗分部</h1>
+    <p>Supercell 出品的休闲竞技手游 · 3v3 快节奏对战</p>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box">
+      <div class="ib-icon">🌵</div>
+      <div>
+        <h4>关于分部</h4>
+        <p>ARC 荒野乱斗分部，适合休闲玩家与上分党。不定期组织 3v3 战队赛、英雄搭配研究。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:920px;">
+    <h2 class="section-title">分部玩法</h2>
+    <p class="section-sub">3v3 竞技 · 休闲 · 上分</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">🏆</div>
+        <h3>战队赛</h3>
+        <p>分部成员组队打战队赛，目标升级 / 排名。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h3>3v3 排位</h3>
+        <p>固定 3 人车队排位上分，英雄搭配 / 走位研究。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎉</div>
+        <h3>休闲娱乐</h3>
+        <p>不限玩法，宝石争霸 / 金库攻防 / 赏金猎人等模式皆可。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

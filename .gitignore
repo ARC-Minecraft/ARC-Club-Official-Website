@@ -1,0 +1,22 @@
+# Python temporary build scripts
+_*.py
+__pycache__/
+*.pyc
+
+# Backup / legacy
+_legacy_keep/
+assets/img/games/originals/
+.trash-pending/
+*.bak
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+

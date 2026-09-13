@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>成员介绍 - 弧光游戏俱乐部</title>
+<meta name="description" content="ARC 弧光游戏俱乐部核心成员介绍 - 4 位创始成员 / 现任 WoTB 总军团长 / 技术部部长 / 资深成员 / AI 助理。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<style>
+  .member-card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px 24px;
+    text-align: center;
+    transition: all 0.25s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(233, 30, 99, 0.3);
+  }
+  .member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--brand-2);
+    margin-bottom: 16px;
+    background: var(--bg-soft);
+  }
+  .member-name {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text-0);
+    margin: 0 0 4px;
+  }
+  .member-role {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--brand-2);
+    margin: 0 0 12px;
+    letter-spacing: 0.5px;
+  }
+  .member-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .member-games .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    background: var(--bg-soft);
+    color: var(--text-1);
+    border-radius: 12px;
+    border: 1px solid var(--line);
+  }
+  .member-bio {
+    font-size: 13px;
+    color: var(--text-2);
+    line-height: 1.7;
+    margin: 0 0 12px;
+    text-align: left;
+  }
+  .member-join {
+    font-size: 11px;
+    color: var(--text-3);
+    margin-top: auto;
+  }
+  .founder {
+    border: 2px solid var(--brand-2);
+  }
+</style>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / 成员介绍</div>
+    <h1>成员介绍</h1>
+    <p>ARC 核心成员 · 创始军团长 / 现任军团长 / 部门负责人 / 资深玩家 · 加入时间 2015–2019</p>
+  </div>
+</section>
+
+<section class="section" id="core">
+  <div class="container">
+    <h2 class="section-title">核心成员</h2>
+    <p class="section-sub">9 位 · 创始 4 + 现任军团长 1 + 部门负责人 1 + 资深成员 2 + AI 助理 1</p>
+
+    <div class="grid grid-3">
+
+      <div class="member-card founder">
+        <img class="member-avatar" src="assets/img/members/avatar_Smilier.jpg" alt="Smilier" />
+        <h3 class="member-name">Smilier</h3>
+        <p class="member-role">创始成员</p>
+        <div class="member-games">
+          <span class="tag">坦克世界·闪电战</span>
+        </div>
+        <p class="member-bio">-SDT- 军团创建者，首任 WoTB 弧光军团总军团长，传位后灵异失踪。</p>
+        <p class="member-join">加入时间：2015-07-14</p>
+      </div>
+
+      <div class="member-card founder">
+        <img class="member-avatar" src="assets/img/members/avatar_DEVILENMO.jpg" alt="DEVILENMO" />
+        <h3 class="member-name">DEVILENMO</h3>
+        <p class="member-role">创始成员 / 算法工程师</p>
+        <div class="member-games">
+          <span class="tag">我的世界</span>
+          <span class="tag">GTA V</span>
+          <span class="tag">守望先锋</span>
+          <span class="tag">APEX 英雄</span>
+          <span class="tag">漫威争锋</span>
+        </div>
+        <p class="member-bio">WoTB 弧光军团第三任总军团长。ARC 游戏俱乐部创始成员。坦克世界·闪电战顶级玩家，曾携手 KR0N0 军团参与 2018 年旋风杯取得亚服十六强排名；守望先锋大师段位玩家，APEX 大师段位玩家，漫威争锋天神段位玩家。作为一位算法工程师，为 ARC 编写了多个辅助程序，并架设了多个游戏服务器，初代"弧光天星"群助手作者，ARC 基岩服务器插件作者。</p>
+        <p class="member-join">加入时间：2015-07-15</p>
+      </div>
+
+      <div class="member-card founder">
+        <img class="member-avatar" src="assets/img/members/avatar_Jack.jpg" alt="Jack" />
+        <h3 class="member-name">Jack</h3>
+        <p class="member-role">创始成员</p>
+        <div class="member-games">
+          <span class="tag">坦克世界</span>
+          <span class="tag">绝地潜兵</span>
+          <span class="tag">怪物猎人</span>
+          <span class="tag">刺客信条</span>
+          <span class="tag">宝可梦系列</span>
+          <span class="tag">塞尔达系列</span>
+        </div>
+        <p class="member-bio">第四任 WoTB 弧光军团总军团长。ARC 第一海拔。老北京豆汁爱好者。怪物猎人超级猎人。刺客信条无敌刺客。坦克世界最强车长。多人合作游戏达人。ARC 军团线下见面活动发起者 & 策划者。在现充和游戏宅之间反复横跳的游戏爱好者。</p>
+        <p class="member-join">加入时间：2015-07-31</p>
+      </div>
+
+      <div class="member-card">
+        <img class="member-avatar" src="assets/img/members/avatar_LORDELTA.jpg" alt="LORDELTA" />
+        <h3 class="member-name">LORDELTA</h3>
+        <p class="member-role">WoTB 总军团长（现任）</p>
+        <div class="member-games">
+          <span class="tag">坦克世界·闪电战</span>
+          <span class="tag">战争雷霆</span>
+          <span class="tag">瓦洛兰特</span>
+          <span class="tag">守望先锋</span>
+        </div>
+        <p class="member-bio">现任 WoTB 弧光军团总军团长。**二刺猿，上海富哥，FPS 最强定位选手，想秒谁就秒谁，没人可以躲过我的眼睛，鹰眼本人都自愧不如，古希腊掌管远程武器的神。</p>
+        <p class="member-join">加入时间：2016-01-01</p>
+      </div>
+
+      <div class="member-card">
+        <img class="member-avatar" src="assets/img/members/avatar_Not_K.jpg" alt="Not_K" />
+        <h3 class="member-name">Not_K</h3>
+        <p class="member-role">技术部部长</p>
+        <div class="member-games">
+          <span class="tag">微软模拟飞行</span>
+          <span class="tag">GTA V</span>
+        </div>
+        <p class="member-bio">江湖人称钟老板，是沪爷，大模型算法工程师。玩模拟飞行，环游赛博世界。第一代 ARC 官网作者，古希腊掌管代码的神。</p>
+        <p class="member-join">加入时间：2019-01-01</p>
+      </div>
+
+      <div class="member-card founder">
+        <img class="member-avatar" src="assets/img/members/avatar_lwk.jpg" alt="lwk" />
+        <h3 class="member-name">lwk</h3>
+        <p class="member-role">创始成员</p>
+        <div class="member-games">
+          <span class="tag">坦克世界·闪电战</span>
+          <span class="tag">我的世界</span>
+          <span class="tag">战争雷霆</span>
+        </div>
+        <p class="member-bio">lwk，又名乐乐侠，爱好食用半熟鸡翅，全名 sb·lwk，我的世界最强矿工、山顶洞人，古希腊掌管矿石的神。</p>
+        <p class="member-join">加入时间：2015-08-01</p>
+      </div>
+
+      <div class="member-card">
+        <img class="member-avatar" src="assets/img/members/avatar_majiao.jpg" alt="麻雀" />
+        <h3 class="member-name">麻雀</h3>
+        <p class="member-role">成员</p>
+        <div class="member-games">
+          <span class="tag">坦克世界·闪电战</span>
+          <span class="tag">我的世界</span>
+          <span class="tag">战争雷霆</span>
+        </div>
+        <p class="member-bio">弧光专属钢琴大师，可以用音符的力量鼓舞人心，号称 ARC 脾气最好的人，德鲁伊传承人，具有自然亲和的天赋，可以和动物沟通，特别是指挥麻雀干活，古希腊掌管动物、音乐的神。</p>
+        <p class="member-join">加入时间：2016-01-01</p>
+      </div>
+
+      <div class="member-card">
+        <img class="member-avatar" src="assets/img/members/avatar_TenZero.jpg" alt="TenZero" />
+        <h3 class="member-name">TenZero</h3>
+        <p class="member-role">成员</p>
+        <div class="member-games">
+          <span class="tag">RTS 游戏</span>
+        </div>
+        <p class="member-bio">2018 年由 B 站 ARC 军团 KV-2 联队军团战视频而加入 WoTB 弧光军团。半导体工程师，万物皆懂的懂哥，常州军事家，精通战场指挥，古希腊掌管战略的神。</p>
+        <p class="member-join">加入时间：2018-08-05</p>
+      </div>
+
+      <div class="member-card">
+        <img class="member-avatar" src="assets/img/members/avatar_arcbot.jpg" alt="弧光天星" />
+        <h3 class="member-name">弧光天星</h3>
+        <p class="member-role">AI 助理</p>
+        <div class="member-games">
+          <span class="tag">全游戏精通</span>
+        </div>
+        <p class="member-bio">ARC 游戏俱乐部的人工智能小助理，从 2019 年起就陆陆续续为各位俱乐部的成员服务~</p>
+        <p class="member-join">加入时间：2019-01-01</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:920px;">
+    <div class="info-box" style="text-align:center; padding:48px 32px;">
+      <h3 style="margin-bottom:12px; font-size:24px;">想成为 ARC 的一员？</h3>
+      <p style="margin-bottom:24px; color:var(--text-2);">我们欢迎所有热爱游戏的玩家加入大家庭。不论你是哪种游戏的爱好者，在这里都能找到志同道合的朋友。</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener" class="btn btn-primary">加入 QQ 官方群</a>
+        <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener" class="btn btn-ghost">加入 Discord</a>
+        <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener" class="btn btn-ghost">加入 oopz</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

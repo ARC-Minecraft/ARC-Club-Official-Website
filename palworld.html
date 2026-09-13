@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>幻兽帕鲁服务器 - 弧光游戏俱乐部</title>
+<meta name="description" content="ARC 弧光游戏俱乐部幻兽帕鲁服务器 - 开放世界生存、收集、建造、PVP。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / <a href="#">服务器</a> / 幻兽帕鲁</div>
+    <h1>幻兽帕鲁服务器</h1>
+    <p>ARC 自建幻兽帕鲁服务器 · 开放世界 · 收集 · 建造 · 合作 · PVP · IP：<code style="font-family:'SF Mono',Consolas,monospace;background:var(--bg-soft);padding:4px 12px;border-radius:6px;color:var(--brand-2);">arcclub.top:8211</code></p>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box">
+      <div class="ib-icon">🐉</div>
+      <div>
+        <h4>服务器状态：开服中</h4>
+        <p>幻兽帕鲁服务器当前正在运行。直接连接 <code style="font-family:'SF Mono',Consolas,monospace;background:var(--bg-soft);padding:2px 8px;border-radius:4px;color:var(--brand-2);">arcclub.top:8211</code> 即可加入；密码 / 版本更新见玩家群公告。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:1080px;">
+    <h2 class="section-title">玩法介绍</h2>
+    <p class="section-sub">捕捉 · 建造 · 战斗 · 联机</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon">🥚</div>
+        <h3>帕鲁捕捉</h3>
+        <p>不同生态区域分布各种帕鲁，部分稀有帕鲁有特殊刷新条件。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏰</div>
+        <h3>基地建造</h3>
+        <p>从简易小屋到工业流水线，建造自动化生产体系。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚔️</div>
+        <h3>PVP / 合作</h3>
+        <p>可组队合作打 Boss，也可开启 PVP 模式相互对战。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:1080px;">
+    <div class="qq-group">
+      <div class="qg-icon">QQ</div>
+      <div class="qg-body">
+        <div class="qg-label">弧光游戏俱乐部 · 官方群</div>
+        <div class="qg-num">1138387946</div>
+        <div class="qg-tip">涵盖所有服务器 / 分部 / 摄影间 / 技术部 · 俱乐部唯一官方群</div>
+      </div>
+      <a class="qg-action" href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">一键加群 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:920px;">
+    <div class="info-box">
+      <div class="ib-icon">📨</div>
+      <div>
+        <h4>加入方式</h4>
+        <p>服务器地址已公开：<code style="font-family:'SF Mono',Consolas,monospace;background:var(--bg-soft);padding:2px 8px;border-radius:4px;color:var(--brand-2);">arcclub.top:8211</code>。密码、版本更新、入群福利等动态请加玩家群。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

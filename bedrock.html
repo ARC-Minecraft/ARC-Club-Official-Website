@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>我的世界基岩服务器 - 弧光游戏俱乐部</title>
+<meta name="description" content="弧光国际基岩版服务器 - arcclub.top，5 个端口：冒险模拟生活、创世神创造、枪战、无限制生存、末世丧尸。" />
+<link rel="icon" type="image/png" href="assets/img/icon.png" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <div class="nav-dropdown is-active">
+        <a class="dropdown-toggle" tabindex="0">服务器</a>
+        <div class="dropdown-menu">
+          <a href="bedrock.html">我的世界基岩<span class="dot ok"></span></a>
+          <a href="palworld.html">幻兽帕鲁<span class="dot ok"></span></a>
+          <a href="terraria.html">泰拉瑞亚<span class="dot ok"></span></a>
+          <a href="dont_starve.html">饥荒<span class="dot off"></span></a>
+          <a href="forest.html">森林<span class="dot off"></span></a>
+          <a href="wind_quest.html">风启之旅<span class="dot off"></span></a>
+          <a href="wind_island.html">风屿奇航<span class="dot off"></span></a>
+          <a href="icefire.html">冰封之焰<span class="dot off"></span></a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="dropdown-toggle" tabindex="0">俱乐部分部</a>
+        <div class="dropdown-menu">
+          <a href="wotb.html">WoTB 分部</a>
+          <a href="clash_royale.html">皇室战争</a>
+          <a href="apex.html">APEX 英雄</a>
+          <a href="brawl_stars.html">荒野乱斗</a>
+          <a href="codm.html">使命召唤手游</a>
+          <a href="overwatch.html">守望先锋</a>
+          <a href="valorant.html">Valorant</a>
+          <a href="gta5.html">GTA V</a>`n          <a href="nms.html">无人深空</a>`n        </div>
+      </div>
+      <a href="studio.html">弧光摄影间</a>
+      <a href="tech.html">弧光技术部</a>
+      <a href="members.html">成员介绍</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  (function () {
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav-links > a').forEach(function (a) {
+      if ((a.getAttribute('href') || '').toLowerCase() === path) a.classList.add('active');
+    });
+    document.querySelectorAll('.nav-dropdown').forEach(function (dd) {
+      dd.querySelectorAll('.dropdown-menu a').forEach(function (a) {
+        if ((a.getAttribute('href') || '').toLowerCase() === path) dd.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+<section class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">首页</a> / 我的世界基岩</div>
+    <h1>我的世界基岩服务器</h1>
+    <p>弧光国际基岩版服务器 · 版本：国际基岩最新版 · IP：<code style="font-family:'SF Mono',Consolas,monospace;background:var(--bg-soft);padding:4px 12px;border-radius:6px;color:var(--brand-2);">arcclub.top</code></p>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:920px;">
+    <h2 class="section-title" style="font-size:28px; margin-bottom:8px;">服务器宣传片</h2>
+    <p class="section-sub" style="margin-bottom:24px;">2018 至今 · 8 年的故事 · 涵盖全部 5 个端口介绍</p>
+
+    <article class="video-card-embed" style="max-width:920px; margin:0 auto;">
+      <div class="video-cover" data-src="//player.bilibili.com/player.html?bvid=BV1Xp1FBiEtu&autoplay=1&danmaku=0&high_quality=1">
+        <img src="https://i2.hdslb.com/bfs/archive/1cf3c1807f788d8c3c56b77e8f0ac678883a5970.jpg" alt="封面" referrerpolicy="no-referrer" loading="lazy" />
+        <div class="cover-play">
+          <div class="play-circle">▶</div>
+          <div class="play-tip">点击播放</div>
+        </div>
+        <span class="cover-duration">02:37</span>
+      </div>
+      <div class="video-meta">
+        <h4>[MC] 开服 8 年 · 我们的青春</h4>
+        <div class="video-stats">
+          <span class="stat"><span class="stat-ic">👤</span> DEVILENMO</span>
+          <span class="stat"><span class="stat-ic">▶</span> 495</span>
+          <span class="stat"><span class="stat-ic">👍</span> 22</span>
+          <span class="stat"><span class="stat-ic">💬</span> 5</span>
+        </div>
+        <p class="video-desc">2018 年到至今，开服 8 年了。承载着我们的青春，十年青春梦，藏在这座服务器里。从一个人到一个团队，从一个想法到一个家——这就是弧光基岩的故事。涵盖全部 5 个端口（冒险模拟生活 / 创世神创造 / 枪战 / 无限制生存 / 末世丧尸）的介绍与宣传。</p>
+        <div class="video-foot">
+          <span class="vid-tag">BV1Xp1FBiEtu</span>
+          <a class="open-bili" href="https://www.bilibili.com/video/BV1Xp1FBiEtu/" target="_blank" rel="noopener">在 B 站打开 →</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section-sm" style="padding:20px 0 0;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box">
+      <div class="ib-icon">⛏️</div>
+      <div>
+        <h4>5 个端口 / 5 种玩法</h4>
+        <p>基岩服务器群下设 5 个端口，每个端口对应一种核心玩法，按需选择加入即可。所有服务器共享主域 <strong>arcclub.top</strong>，仅端口不同。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container">
+    <h2 class="section-title">5 个端口一览</h2>
+    <p class="section-sub">点击进入各服务器详细页 · 查看玩法 / 视频 / 加入方式</p>
+
+    <div class="grid grid-2">
+
+      <a class="card" href="bedrock-19132.html" style="display:block;">
+        <div style="display:flex; align-items:start; gap:16px;">
+          <div class="server-num" style="flex-shrink:0;">①</div>
+          <div style="flex:1;">
+            <h3 style="margin-bottom:6px;">弧光冒险模拟生活服务器</h3>
+            <p style="margin-bottom:12px;">冒险、生存、生活向主服务器。探索、建设、经济、领地、传送、商店、股市等综合玩法。<br/><span style="color:var(--warn); font-size:12px;">⚠ 禁止高频红石电路</span></p>
+            <div class="server-tags" style="margin-bottom:12px;">
+              <span class="tag">冒险</span><span class="tag">生存</span><span class="tag">经济</span><span class="tag">股市</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <span class="server-port">端口 19132</span>
+              <span class="more" style="font-size:13px;">查看详情 →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="bedrock-19152.html" style="display:block;">
+        <div style="display:flex; align-items:start; gap:16px;">
+          <div class="server-num" style="flex-shrink:0;">②</div>
+          <div style="flex:1;">
+            <h3 style="margin-bottom:6px;">创世神创造服</h3>
+            <p style="margin-bottom:12px;">纯创造服，有许多宏大历史建筑。欢迎参与建造与参观，一起造奇观。</p>
+            <div class="server-tags" style="margin-bottom:12px;">
+              <span class="tag">纯创造</span><span class="tag">建筑观赏</span><span class="tag">共建</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <span class="server-port">端口 19152</span>
+              <span class="more" style="font-size:13px;">查看详情 →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="bedrock-19134.html" style="display:block;">
+        <div style="display:flex; align-items:start; gap:16px;">
+          <div class="server-num" style="flex-shrink:0;">③</div>
+          <div style="flex:1;">
+            <h3 style="margin-bottom:6px;">枪械战争服务器</h3>
+            <p style="margin-bottom:12px;">枪战玩法服务器，支持团队死斗等多种枪械对战模式。参与战斗可赚取游戏币与公会点数。<br/><span style="color:var(--brand-2); font-size:12px;">📹 已有视频作品 / 当前为内测</span></p>
+            <div class="server-tags" style="margin-bottom:12px;">
+              <span class="tag">PvP</span><span class="tag">团队死斗</span><span class="tag">枪械</span><span class="tag">内测中</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <span class="server-port">端口 19134</span>
+              <span class="more" style="font-size:13px;">查看详情 →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="bedrock-19172.html" style="display:block;">
+        <div style="display:flex; align-items:start; gap:16px;">
+          <div class="server-num" style="flex-shrink:0;">④</div>
+          <div style="flex:1;">
+            <h3 style="margin-bottom:6px;">无限制生存服</h3>
+            <p style="margin-bottom:12px;">自由度较高的生存服务器。想玩生电可以玩生电，想抄家也可以抄家。请自行承担风险。</p>
+            <div class="server-tags" style="margin-bottom:12px;">
+              <span class="tag">无限制</span><span class="tag">生电</span><span class="tag warn">⚠ 高自由度</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <span class="server-port">端口 19172</span>
+              <span class="more" style="font-size:13px;">查看详情 →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="bedrock-19142.html" style="display:block; grid-column: 1 / -1;">
+        <div style="display:flex; align-items:start; gap:16px;">
+          <div class="server-num" style="flex-shrink:0;">⑤</div>
+          <div style="flex:1;">
+            <h3 style="margin-bottom:6px;">末世丧尸枪械生存服务器</h3>
+            <p style="margin-bottom:12px;">末世丧尸题材生存服务器。包含枪械、生存、探索、搜刮与对抗等玩法，适合喜欢高压生存和末日风格的玩家。</p>
+            <div class="server-tags" style="margin-bottom:12px;">
+              <span class="tag">末世</span><span class="tag">丧尸</span><span class="tag">枪械</span><span class="tag">高压生存</span>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <span class="server-port">端口 19142</span>
+              <span class="more" style="font-size:13px;">查看详情 →</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <h2 class="section-title" style="font-size:28px; margin-bottom:20px;">已关闭 / 暂停开放</h2>
+    <p class="section-sub" style="margin-bottom:24px;">以下服务器不再作为可加入服务器列出</p>
+
+    <div class="server off">
+      <div class="server-num">—</div>
+      <div class="server-body">
+        <h3>Java 基岩同服间歇泉纯净生电服</h3>
+        <p>原 Java + 基岩互通纯净生电服。已关闭或暂停开放。</p>
+        <div class="server-tags">
+          <span class="tag off">OFFLINE</span>
+        </div>
+      </div>
+      <div class="server-port" style="opacity:0.5;">—</div>
+    </div>
+
+    <div class="server off">
+      <div class="server-num">—</div>
+      <div class="server-body">
+        <h3>基岩后室恐怖生存服务器</h3>
+        <p>后室题材恐怖生存服务器。已关闭或暂停开放。</p>
+        <div class="server-tags">
+          <span class="tag off">OFFLINE</span>
+        </div>
+      </div>
+      <div class="server-port" style="opacity:0.5;">—</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:1080px;">
+    <div class="qq-group">
+      <div class="qg-icon">QQ</div>
+      <div class="qg-body">
+        <div class="qg-label">弧光游戏俱乐部 · 官方群</div>
+        <div class="qg-num">1138387946</div>
+        <div class="qg-tip">涵盖所有服务器 / 分部 / 摄影间 / 技术部 · 俱乐部唯一官方群</div>
+      </div>
+      <a class="qg-action" href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">一键加群 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0;">
+  <div class="container" style="max-width:920px;">
+    <div class="info-box">
+      <div class="ib-icon">📲</div>
+      <div>
+        <h4>加入方式</h4>
+        <p>基岩版游戏中 → 好友 → 添加服务器 → 服务器名称任意，IP 填 <code>arcclub.top</code>，端口填对应数字即可加入。确认游戏版本为<strong>国际基岩最新版</strong>，或加入上方 QQ 群求助。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:32px;">
+  <div class="container" style="max-width:1080px;">
+    <div class="info-box" style="border-left:4px solid var(--brand-2);">
+      <div class="ib-icon">⚙️</div>
+      <div>
+        <h4>5 个端口的背后：弧光基岩生态开发工作室</h4>
+        <p>5 端口 MCBE 服务器不是普通开服——<strong>整套核心、插件与 AI Agent 全部由弧光技术部自研</strong>，在 <a href="https://github.com/ARC-Minecraft" target="_blank" rel="noopener" style="color:var(--brand-2); font-weight:600;">github.com/ARC-Minecraft</a> 开源。<br />包括 EndStone 基岩服插件生态（银行 / 监狱 / 商店 / 成就 / PvP / AI 助手 / 群服互通等 12+ 仓库），以及 Bedrock Addon 内容工具（自动汉化器、Amulet 世界区块重置）。<br />详细技术栈 / 仓库列表 / 加入 PR → 访问 <a href="tech.html" style="color:var(--brand-2); font-weight:600;">弧光技术部</a> 页面。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/img/icon.png" alt="ARC" />
+      <span>弧光游戏俱乐部</span>
+    </div>
+    <p>创始于 2015 · 游戏热爱者聚集地</p>
+    <div class="links">
+      <a href="https://qm.qq.com/q/zZkzvJWrZI" target="_blank" rel="noopener">QQ 官方群</a>
+      <a href="https://discord.gg/qcRaH2XYA" target="_blank" rel="noopener">Discord</a>
+      <a href="https://oopz.cn/i/1XF5G2" target="_blank" rel="noopener">oopz</a>
+    </div>
+    <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // 视频封面懒加载 B 站 iframe 播放器
+  document.querySelectorAll('.video-cover').forEach(function (cover) {
+    cover.addEventListener('click', function () {
+      var src = cover.getAttribute('data-src');
+      if (!src) return;
+      cover.innerHTML = '<iframe src="' + src + '" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; fullscreen"></iframe>';
+      cover.classList.add('is-playing');
+    });
+  });
+</script>
+
+</body>
+</html>
