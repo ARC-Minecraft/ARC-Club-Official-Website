@@ -123,6 +123,42 @@
   </div>
 </section>
 
+<section class="section" style="padding-top:0;">
+  <div class="container" style="max-width:1080px;">
+    <h2 class="section-title">服务器视频</h2>
+    <p class="section-sub">点击封面加载播放器 · 数据来源 B 站</p>
+
+    <div class="video-grid" style="max-width:720px; margin:0 auto;">
+
+      <article class="video-card-embed">
+        <div class="video-cover" data-src="//player.bilibili.com/player.html?bvid=BV1bYbV6FETU&autoplay=1&danmaku=0&high_quality=1">
+          <img src="https://i2.hdslb.com/bfs/archive/79cca193ee89cca50cc0f1b4baa9fd66a022bf66.jpg" alt="封面" referrerpolicy="no-referrer" loading="lazy" />
+          <div class="cover-play">
+            <div class="play-circle">▶</div>
+            <div class="play-tip">点击播放</div>
+          </div>
+          <span class="cover-duration">00:59</span>
+        </div>
+        <div class="video-meta">
+          <h4>[基岩丧尸服] 弧光末世城市卫队征兵广告</h4>
+          <div class="video-stats">
+            <span class="stat"><span class="stat-ic">👤</span> DEVILENMO</span>
+            <span class="stat"><span class="stat-ic">▶</span> 387</span>
+            <span class="stat"><span class="stat-ic">👍</span> 19</span>
+            <span class="stat"><span class="stat-ic">💬</span> 9</span>
+          </div>
+          <p class="video-desc">欢迎来我们的末世丧尸服务器！这里有 DMZ 搜打撤冒险模式、营养管理与真实生存、枪械 + 丧尸 + 异能。IP：arcclub.top · 端口：19142。</p>
+          <div class="video-foot">
+            <span class="vid-tag">BV1bYbV6FETU</span>
+            <a class="open-bili" href="https://www.bilibili.com/video/BV1bYbV6FETU/" target="_blank" rel="noopener">在 B 站打开 →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <section class="section-sm">
   <div class="container" style="max-width:1080px;">
     <div class="qq-group">
@@ -164,6 +200,17 @@
     <p style="margin-top:18px;">© ARC Game Club. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('.video-cover').forEach(function (cover) {
+    cover.addEventListener('click', function () {
+      var src = cover.getAttribute('data-src');
+      if (!src) return;
+      cover.innerHTML = '<iframe src="' + src + '" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; fullscreen"></iframe>';
+      cover.classList.add('is-playing');
+    });
+  });
+</script>
 
 </body>
 </html>
