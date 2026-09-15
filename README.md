@@ -21,45 +21,54 @@ v2.0 是对 v1（Flask 后端）全面重构后的纯静态站点，零后端依
 
 ## 目录结构
 
+目录布局与顶部导航的信息架构一一对应：根目录 = 一级页面，`servers/` = 服务器下拉组，`divisions/` = 分部下拉组。页面文件名统一 kebab-case。
+
 ```
 arc-club-website-v2/
-├── index.html              # 主页（Hero / 简介 / 时间线 / 服务器 / 分部 / 摄影间入口 / 加入我们）
-├── bedrock.html            # 我的世界基岩总览（5 端口 + 宣传片 + 群）
-├── bedrock-19132.html      # MC 基岩 5 个端口子页（冒险 / 创造 / 枪战 / 末世 / 无限制）
-├── bedrock-19134.html
-├── bedrock-19142.html
-├── bedrock-19152.html
-├── bedrock-19172.html
-├── palworld.html           # 幻兽帕鲁服务器
-├── terraria.html           # 泰拉瑞亚服务器
-├── dont_starve.html        # 饥荒（暂停）
-├── forest.html             # 森林（暂停）
-├── wind_quest.html         # 风启之旅（暂停）
-├── wind_island.html        # 风屿奇航（暂停）
-├── icefire.html            # 冰封之焰（暂停）
-├── wotb.html               # WoTB 分部（主服 / 亚服 / 国服）
-├── wotb-asia.html          # WoTB 亚服（群 707492942）
-├── wotb-cn.html            # WoTB 国服（群 754149012）
-├── clash_royale.html       # 皇室战争分部
-├── apex.html               # APEX 英雄分部
-├── brawl_stars.html        # 荒野乱斗分部
-├── codm.html               # 使命召唤手游分部
-├── overwatch.html          # 守望先锋分部
-├── valorant.html           # Valorant 分部
-├── gta5.html               # GTA V 分部（含 Social Club Crew）
-├── nms.html                # 无人深空分部
-├── divisions.html          # 全部 9 个分部总览
-├── studio.html             # 弧光摄影间（4 段 B 站视频 + 7 段视频集锦）
-├── tech.html               # 弧光技术部（23 个 GitHub 仓库 + 两板块）
-├── members.html            # 9 位核心成员介绍
-├── servers.html            # 旧版服务器总览（保留不在导航）
-└── assets/
-    ├── style.css           # 共享设计系统（CSS 变量 + 浅色主题 + 紫红渐变）
-    ├── icon.png            # ARC 俱乐部图标
-    ├── img/
-    │   ├── games/          # 15 个游戏 banner JPG
-    │   ├── members/        # 9 个成员头像 JPG
-    │   └── games/originals/  # 原始图备份（gitignored）
+├── index.html                  # 主页（Hero / 简介 / 时间线 / 服务器 / 分部 / 摄影间入口 / 加入我们）
+├── studio.html                 # 弧光摄影间（4 段 B 站视频 + 7 段视频集锦）
+├── tech.html                   # 弧光技术部（23 个 GitHub 仓库 + 两板块）
+├── members.html                # 9 位核心成员介绍
+│
+├── servers/                    # 游戏服务器（导航"服务器"下拉组）
+│   ├── bedrock.html            # 我的世界基岩总览（5 端口 + 宣传片 + 群）
+│   ├── bedrock-19132.html      # MC 基岩 5 个端口子页（冒险 / 创造 / 枪战 / 末世 / 无限制）
+│   ├── bedrock-19134.html
+│   ├── bedrock-19142.html
+│   ├── bedrock-19152.html
+│   ├── bedrock-19172.html
+│   ├── palworld.html           # 幻兽帕鲁服务器
+│   ├── terraria.html           # 泰拉瑞亚服务器
+│   ├── dont-starve.html        # 饥荒（暂停）
+│   ├── forest.html             # 森林（暂停）
+│   ├── wind-quest.html         # 风启之旅（暂停）
+│   ├── wind-island.html        # 风屿奇航（暂停）
+│   └── icefire.html            # 冰封之焰（暂停）
+│
+├── divisions/                  # 俱乐部分部（导航"俱乐部分部"下拉组）
+│   ├── divisions.html          # 全部 9 个分部总览
+│   ├── wotb.html               # WoTB 分部（主服 / 亚服 / 国服）
+│   ├── wotb-asia.html          # WoTB 亚服（群 707492942）
+│   ├── wotb-cn.html            # WoTB 国服（群 754149012）
+│   ├── clash-royale.html       # 皇室战争分部
+│   ├── apex.html               # APEX 英雄分部
+│   ├── brawl-stars.html        # 荒野乱斗分部
+│   ├── codm.html               # 使命召唤手游分部
+│   ├── overwatch.html          # 守望先锋分部
+│   ├── valorant.html           # Valorant 分部
+│   ├── gta5.html               # GTA V 分部（含 Social Club Crew）
+│   └── nms.html                # 无人深空分部
+│
+├── assets/                     # 静态资源（子目录页面用 ../assets/ 相对引用）
+│   ├── style.css               # 共享设计系统（CSS 变量 + 浅色主题 + 紫红渐变）
+│   ├── icon.png                # ARC 俱乐部图标
+│   └── img/
+│       ├── games/              # 15 个游戏 banner JPG
+│       ├── members/            # 9 个成员头像 JPG
+│       └── games/originals/    # 原始图备份（gitignored，不部署）
+│
+├── scripts/                    # 维护脚本
+│   └── gh-repos.py             # 拉取 ARC-Minecraft 组织仓库数据（更新 tech.html 用）
 └── .gitignore
 ```
 
@@ -104,6 +113,8 @@ website_deploy --node_id 438741679345924
 ```
 
 也可以部署到任何静态托管（GitHub Pages / Netlify / Vercel / Cloudflare Pages），把整个项目根目录上传即可。
+
+> **注意**：v2.0 结构整理（2026-09）把页面按导航分组进了 `servers/` 和 `divisions/` 子目录，并统一了 kebab-case 命名（如 `dont_starve.html` → `servers/dont-starve.html`）。重新部署后旧的深层链接（如 `/bedrock-19132.html`）会 404，请以新路径分享。
 
 ---
 

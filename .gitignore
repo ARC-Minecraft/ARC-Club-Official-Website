@@ -1,12 +1,11 @@
-# Python temporary build scripts
-_*.py
+# Python
 __pycache__/
 *.pyc
 
-# Backup / legacy
-_legacy_keep/
+# Image originals backup (not deployed)
 assets/img/games/originals/
-.trash-pending/
+
+# Temp / local
 *.bak
 *.log
 
@@ -19,4 +18,3 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
-
