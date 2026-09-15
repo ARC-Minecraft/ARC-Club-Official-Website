@@ -14,7 +14,7 @@ v2.0 是对 v1（Flask 后端）全面重构后的纯静态站点，零后端依
 - **8 个自建游戏服务器**：我的世界基岩 5 端口 + 幻兽帕鲁 + 泰拉瑞亚
 - **9 个俱乐部分部**：WoTB 亚服 / 国服 / 皇室战争 / APEX / 荒野乱斗 / CoDM / 守望先锋 / Valorant / GTA V / 无人深空
 - **弧光摄影间**：微电影 / 宣传片 / 比赛录像
-- **弧光技术部**：ARC-Minecraft GitHub 组织（23 个 EndStone + Bedrock Addon 仓库 + WoTB 历史项目）
+- **弧光技术部**：ARC-Game-Club GitHub 组织（23 个 EndStone + Bedrock Addon 仓库 + WoTB 历史项目）
 - **成员介绍**：9 位核心成员档案
 
 ---
@@ -68,7 +68,7 @@ arc-club-website-v2/
 │       └── games/originals/    # 原始图备份（gitignored，不部署）
 │
 ├── scripts/                    # 维护脚本
-│   └── gh-repos.py             # 拉取 ARC-Minecraft 组织仓库数据（更新 tech.html 用）
+│   └── gh-repos.py             # 拉取 ARC-Game-Club 组织仓库数据（更新 tech.html 用）
 └── .gitignore
 ```
 
@@ -167,7 +167,7 @@ cover.addEventListener('click', () => {
 
 ## 关联项目
 
-- **基岩生态开发**：[github.com/ARC-Minecraft](https://github.com/ARC-Minecraft) — 23 个 EndStone 基岩服插件 + Bedrock Addon 工具
+- **基岩生态开发**：[github.com/ARC-Game-Club](https://github.com/ARC-Game-Club) — 23 个 EndStone 基岩服插件 + Bedrock Addon 工具
 - **游戏服务器**：开服 8 年（2018 至今），5 端口 MCBE / 帕鲁 / 泰拉
 
 ---

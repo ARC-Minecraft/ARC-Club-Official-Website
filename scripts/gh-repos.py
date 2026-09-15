@@ -2,7 +2,7 @@ import urllib.request
 import json
 import re
 
-url = 'https://api.github.com/search/repositories?q=org:ARC-Minecraft&sort=stars&order=desc&per_page=30'
+url = 'https://api.github.com/search/repositories?q=org:ARC-Game-Club&sort=stars&order=desc&per_page=30'
 req = urllib.request.Request(url, headers={'User-Agent': 'arc-club-bot', 'Accept': 'application/vnd.github+json'})
 data = json.loads(urllib.request.urlopen(req, timeout=20).read())
 items = data.get('items', [])
