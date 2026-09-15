@@ -14,7 +14,7 @@ v2.0 是对 v1（Flask 后端）全面重构后的纯静态站点，零后端依
 - **8 个自建游戏服务器**：我的世界基岩 5 端口 + 幻兽帕鲁 + 泰拉瑞亚
 - **9 个俱乐部分部**：WoTB 亚服 / 国服 / 皇室战争 / APEX / 荒野乱斗 / CoDM / 守望先锋 / Valorant / GTA V / 无人深空
 - **弧光摄影间**：微电影 / 宣传片 / 比赛录像
-- **弧光技术部**：ARC-Game-Club GitHub 组织（23 个 EndStone + Bedrock Addon 仓库 + WoTB 历史项目）
+- **弧光技术部**：ARC-Game-Club GitHub 组织（24 个基岩生态开源仓库）
 - **成员介绍**：9 位核心成员档案
 
 ---
@@ -27,7 +27,7 @@ v2.0 是对 v1（Flask 后端）全面重构后的纯静态站点，零后端依
 arc-club-website-v2/
 ├── index.html                  # 主页（Hero / 简介 / 时间线 / 服务器 / 分部 / 摄影间入口 / 加入我们）
 ├── studio.html                 # 弧光摄影间（4 段 B 站视频 + 7 段视频集锦）
-├── tech.html                   # 弧光技术部（23 个 GitHub 仓库 + 两板块）
+├── tech.html                   # 弧光技术部（24 个基岩生态仓库卡片 + 两板块）
 ├── members.html                # 9 位核心成员介绍
 │
 ├── servers/                    # 游戏服务器（导航"服务器"下拉组）
@@ -167,7 +167,7 @@ cover.addEventListener('click', () => {
 
 ## 关联项目
 
-- **基岩生态开发**：[github.com/ARC-Game-Club](https://github.com/ARC-Game-Club) — 23 个 EndStone 基岩服插件 + Bedrock Addon 工具
+- **基岩生态开发**：[github.com/ARC-Game-Club](https://github.com/ARC-Game-Club) — 24 个 EndStone 插件与 Bedrock Addon 工具仓库
 - **游戏服务器**：开服 8 年（2018 至今），5 端口 MCBE / 帕鲁 / 泰拉
 
 ---
